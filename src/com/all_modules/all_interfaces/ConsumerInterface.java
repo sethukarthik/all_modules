@@ -92,6 +92,7 @@ public class ConsumerInterface {
 		conIn.add(new ConsumerInterface(5));
 		conIn.add(new ConsumerInterface(6));
 		
+		
 		conIn.forEach((c) -> c.getInp1());
 		
 		ConsumerInterface c = null;
