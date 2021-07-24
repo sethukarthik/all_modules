@@ -1,15 +1,21 @@
 package com.all_modules.thread_demo;
 
-public class RunnableAnno{
+public class RunnableAnno {
 	public static void main(String[] args) {
-		Runnable runnable = new Runnable() {
+		Runnable runA = new Runnable() {
 			@Override
 			public void run() {
-				System.out.println("This is run method as annonymous way of implementation");				
+				for (int i = 0; i < 5; i++) {			
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}				
+					System.out.println("i = " + i + " " + Thread.currentThread());
+				}
 			}
 		};
 		
-		Thread thread = new Thread(runnable);
-		thread.start();
+		runA.run();
 	}
 }
