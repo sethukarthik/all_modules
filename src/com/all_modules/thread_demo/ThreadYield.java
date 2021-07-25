@@ -11,7 +11,7 @@ public class ThreadYield extends Thread {
 	public void run() {
 		System.out.println("This is Run");
 	}
-		
+	// Using yield will give low priority to the threads from main thread
 	public static void main(String[] args) {
 		System.out.println("Main method begin");
 		// Thread 1
