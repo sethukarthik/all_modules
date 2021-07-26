@@ -55,8 +55,9 @@ public class MyThread extends Thread {
 		//We can also create a multiple thread using a for loop
 		System.out.println(Thread.currentThread().getName());
 	    for(int i=0; i<10; i++){
-	      new Thread("" + i){
-	        public void run(){
+	      new Thread("Thread-" + i){
+	    	  @Override
+	    	  public void run(){
 	          System.out.println("Thread: " + getName() + " running");
 	        }
 	      }.start();

@@ -15,5 +15,6 @@ public class RunnableLambda {
 		
 		Thread thread = new Thread(runL, "Runnable Lambda");
 		thread.start();
+//		runL.run();
 	}
 }
