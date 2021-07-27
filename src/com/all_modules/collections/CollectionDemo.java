@@ -3,6 +3,7 @@ package com.all_modules.collections;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class CollectionDemo {
@@ -40,9 +41,24 @@ public class CollectionDemo {
 		lists.add(0, 1);
 		lists.add(0, 2);
 		lists.add(1, 3);
+		lists.add(4);
 		System.out.println(lists);
 		
+		//To sort the list in ascending order
 		Collections.sort(lists);
+		
+		//To reverse the list
+		Collections.reverse(lists);
+		
 		System.out.println(lists);
+		
+		//Convert List into array
+		Integer[] listToArray = lists.toArray(new Integer[0]);
+		
+		System.out.println(listToArray);
+		for (int i = 0; i < listToArray.length; i++) {
+			int j = listToArray[i];
+			System.out.println(j);
+		}
 	}
 }
