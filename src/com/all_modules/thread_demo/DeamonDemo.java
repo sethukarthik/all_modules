@@ -32,7 +32,7 @@ public class DeamonDemo {
 	
 	public static void main(String[] args) {
 		DeamonDemo dd = new DeamonDemo();
-		 dd.testDeman();
-		 System.out.println("Stoping Main Thread");
+		dd.testDeman();
+		System.out.println("Stoping Main Thread");
 	}
 }

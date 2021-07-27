@@ -1,6 +1,6 @@
 package com.all_modules.thread_demo;
 
-public class VolatileDemo extends Thread{
+public class VolatileDemo extends Thread {
 	volatile boolean keepRunning = true;
 	
 	@Override
