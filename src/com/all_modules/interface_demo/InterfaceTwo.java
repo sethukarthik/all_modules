@@ -2,7 +2,7 @@ package com.all_modules.interface_demo;
 
 public interface InterfaceTwo {
 	
-	void testInterface(); 
+	void testInterfaceTwo(); 
 	
 	default int returnInt(int i) {
 		return i;
@@ -11,4 +11,5 @@ public interface InterfaceTwo {
 	static char returnChar(char c) {
 		return c;
 	}
+
 }

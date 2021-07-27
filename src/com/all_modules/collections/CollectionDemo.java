@@ -43,7 +43,13 @@ public class CollectionDemo {
 		lists.add(1, 3);
 		lists.add(4);
 		System.out.println(lists);
-		
+		Collection<Integer> listC = new ArrayList<>();
+		listC.add(1);
+		listC.add(2);
+		listC.add(3);
+		listC.add(4);
+		System.out.println("--------" + listC);
+
 		//To sort the list in ascending order
 		Collections.sort(lists);
 		
