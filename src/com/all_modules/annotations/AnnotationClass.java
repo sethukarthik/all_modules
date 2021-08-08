@@ -4,7 +4,8 @@ import java.lang.reflect.Method;
 
 //@MyAnnotation(count = 123, name = "Java") 
 //@MyAnnotation(intArray={123}) //we don't need to consider the elements if it does contains default values 
-public class AnnotationClass {
+
+public class AnnotationClass implements MyInterface {
 	private int count;
 
 	@MyAnnotation(count = 123, name = "Java", intArray = {1,2})
@@ -17,7 +18,13 @@ public class AnnotationClass {
 		name.open_1(0);		
 	}
 
+	@Override
+	public void open() {
+	}
+
 }
+
+//1. Implementation, Compiler, Runtime
 
 /*
   	@Inherited
@@ -33,3 +40,13 @@ public class AnnotationClass {
 	public class MySuperClass { ... }
 	public class MySubClass extends MySuperClass { ... }
 */
+
+/*
+ * Override
+ * Deprecated
+ * Document 
+ * SuppressWarnings -> It hide the warning
+ * FunctionalAnnotation
+ * SafeVarrags
+ * Inheritance
+ */

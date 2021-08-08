@@ -3,7 +3,7 @@ package com.all_modules.annotations;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-public class RepeatAnnotation {
+public class RepeatAnnotation{
 	
 	// Repeat Words on newMethod
     @Words(word = "First", value = 1)
